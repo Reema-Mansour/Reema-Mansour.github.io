@@ -1,4 +1,81 @@
 body{
     color: black;
     background-color:#DDD8C4; 
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+.container{
+    padding: 5%;
+    margin: 0;
+    background-image: url("https://img.freepik.com/free-photo/healthy-dish-with-chicken-tomatoes-avocado-lettuce-lentil-dark-background_2829-971.jpg?size=626&ext=jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header{
+    background-color:#A3C9A8;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav{
+    flex-basis: 33.33%;
+    vertical-align: middle;
+    line-height: 50px; 
+}
+.logo{
+    flex-basis:33.33%;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px; 
+    font-size: 30px;
+
+}
+.shares{
+    flex-basis: 33.33%;
+    vertical-align: middle;
+    line-height: 50px; 
+    text-align: right;
+}
+a.nav-links{
+    color: white;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    padding: 5px;
+}
+a.nav-links:hover{
+    color: #000;
+}
+.span{
+    
+    display: inline;
+    border-left: 1px solid white;
+    margin: 10px;
+}
+.food-section{
+    width:100%;
+    border: 2px solid white;
+    height: 500px;
+    background-color: rgba(255, 253, 254, 0.43);
+}
+.title{
+    text-align: center;
+    position: relative;
+    margin:40px 0 20px 0;
+    font-family: monospace;
+    height: 150px;
+    font-size: 20px;
+    
+}
+.line{
+    width:100%;
+    height: 1px;
+    margin: 10px;
+    background-color: black;
+}
+
