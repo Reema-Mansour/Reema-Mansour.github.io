@@ -4,11 +4,12 @@ body{
     margin: 0;
     overflow-y: scroll;
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container{
-    padding: 5%;
+    padding: 0 5% 0 5%;
     margin: 0;
-    background-image: url("https://img.freepik.com/free-photo/healthy-dish-with-chicken-tomatoes-avocado-lettuce-lentil-dark-background_2829-971.jpg?size=626&ext=jpg");
+    background-image: url("https://cdn-images-1.medium.com/max/1200/1*X60X0EAcxnIlXFAZkv7p8g.jpeg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -57,13 +58,17 @@ a.nav-links:hover{
     border-left: 1px solid white;
     margin: 10px;
 }
-.food-section{
-    width:100%;
-    border: 2px solid white;
+.f-section{
+    padding: 5%;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
     height: 500px;
-    background-color: rgba(255, 253, 254, 0.43);
+    background-color: rgba(255, 253, 254, 0.8);
+    font-size: 20px;
+    font-weight: 400;
+    
 }
-.title{
+.main-title{
     text-align: center;
     position: relative;
     margin:40px 0 20px 0;
@@ -78,4 +83,163 @@ a.nav-links:hover{
     margin: 10px;
     background-color: black;
 }
+.section{
+    margin:40px;
+}
+.title{
+    font-size: 30px;
+    color: #000000;
+}
+.body p{
+    font-size:20px;
+    color:#50808E;
+}   
 
+.logoo-color{
+    color:#50808E;
+}
+.questions{
+    text-align: center;
+    border: 2px solid #50808E;
+    padding: 3%;
+    font-size:20px;
+    position: relative;
+    color:#50808E;
+}
+.questions table{
+    width: 100%;
+}
+.questions-title{
+    position: absolute;
+    top:-10%;
+    left:1;
+    width:20%;
+    height:10%;
+    padding: 10px;
+    color: #DDD8C4;
+    background-color: #50808E;
+    border: 1px solid #50808E;
+    vertical-align: middle;
+    line-height: 50%;
+}
+.btn{
+    width:60%;
+    height: 25%;
+    background-color: transparent;
+    display: inline-block;
+}
+.btn-green{
+    border: 2px solid #50808E;
+    border-radius: 20px;
+
+}
+.btn-red{
+   
+    border: 2px solid #50808E;
+    border-radius: 20px;
+}
+.btn-red:hover{
+    color:white;
+    background-color: #50808E;
+}
+.btn-green:hover{
+    color:white;
+    background-color:  #50808E;
+}
+.bt-c{
+    border-top:2px solid #ccc;
+}
+.text-center{
+    text-align: center;
+}
+ul{
+    padding: 0%;
+    margin: 0%;
+}
+ul li a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.b-thik-green{
+    background-color: #A3C9A8;
+    width: 100%
+}
+.pad-10{
+    padding: 10px;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    flex-basis: 30%;
+    margin:5px;
+    padding:10px;
+    border-radius: 20px;
+
+}
+.card-body{
+    font-size:20px;
+}
+.card-footer{
+    padding: 10px;
+    margin-top:5px;
+}
+.input-part{
+    flex-basis: 15%;
+    flex-grow:1;
+}
+.lables{
+    font-size: 20px;
+    color: #575757;
+    font-weight: bold;
+    display: block;
+}
+.labels-input{
+    width:90%;
+    border-radius:20px;
+    display: block;
+    margin-top:5%;
+    border: 0;
+    padding-left: 10px;   
+    height: 30px; 
+}
+*:focus {
+    outline: none;
+}
+.button-doesnot-matter {
+    background-color:#555555;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px 10px;
+    cursor: pointer;
+    border:2px solid #555555;
+    width: 50%;
+}
+.parts{
+    display: flex;
+}
+.button-doesnot-matter:hover{
+    background-color:white;
+    color: #555555;
+    border:2px solid #555555;
+}
+.food-table{
+    padding:5px;
+    width:100%;
+    
+}
+.food-table tr td{
+    border: 1px solid #444444;
+    height: 50px;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
