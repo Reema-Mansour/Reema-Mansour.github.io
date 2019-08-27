@@ -1,3 +1,53 @@
+/* start fonts */
+@charset "UTF-8";
+/* content better media queries */
+
+@font-face {
+  font-family: 'opensans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Opensans/regular/opensans-regular-webfont.ttf") format("truetype"),
+  url("../fonts/Opensans/regular/opensans-regular-webfont.eot") format("embedded-opentype"),
+  url("../fonts/Opensans/regular/opensans-regular-webfont.woff") format("woff"),
+  url("../fonts/Opensans/regular/opensans-regular-webfont.svg") format("svg");
+}
+@font-face {
+  font-family: 'opensans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Opensans/light/opensans-light-webfont.ttf") format("truetype"),
+  url("../fonts/Opensans/light/opensans-light-webfont.eot") format("embedded-opentype"),
+  url("../fonts/Opensans/light/opensans-light-webfont.woff") format("woff"),
+  url("../fonts/Opensans/light/opensans-light-webfont.svg") format("svg");
+}
+@font-face {
+  font-family: 'opensans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Opensans/semibold/opensans-semibold-webfont.ttf") format("truetype"),
+  url("../fonts/Opensans/semibold/opensans-semibold-webfont.eot") format("embedded-opentype"),
+  url("../fonts/Opensans/semibold/opensans-semibold-webfont.woff") format("woff"),
+  url("../fonts/Opensans/semibold/opensans-semibold-webfont.svg") format("svg");
+}
+@font-face {
+    font-family: 'opensans';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Opensans/bold/opensans-bold-webfont.ttf") format("truetype"),
+    url("../fonts/Opensans/bold/opensans-bold-webfont.eot") format("embedded-opentype"),
+    url("../fonts/Opensans/bold/opensans-bold-webfont.woff") format("woff"),
+    url("../fonts/Opensans/bold/opensans-bold-webfont.svg") format("svg");
+  }
+  @font-face {
+    font-family: 'Gabriola';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Gabriola/Gabriola.ttf") format("truetype"),
+    url("../fonts/Gabriola/Gabriola.eot") format("embedded-opentype"),
+    url("../fonts/Gabriola/Gabriola.woff") format("woff"),
+    url("../fonts/Gabriola/Gabriola.svg") format("svg");
+  }
+/* end fonts */
 html {
     height: 100%;
     box-sizing: border-box;
