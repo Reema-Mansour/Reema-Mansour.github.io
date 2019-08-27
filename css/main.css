@@ -286,7 +286,7 @@ html {
       font-size: 30px;
       margin: 18px 0px;
       color: #ffffff;
-      font-family: 'Gabriola', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: 'Gabriola';
       line-height: 48px;
       text-align: justify;
       overflow: hidden;
@@ -333,7 +333,7 @@ html {
   .part-wraper p{
       font-size:35px;
       color: #6a6969;
-      font-family: 'Gabriola', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: 'Gabriola';
       line-height: 48px;
       text-align: justify;
       text-align-last: center;
@@ -427,7 +427,7 @@ html {
   .service-items-containter .item a h1{
       font-size:400%;
       color: #ffffff;
-      font-family: 'Gabriola', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: 'Gabriola';
       line-height: 300px;
   }
   .service-items-containter .item:hover img{
@@ -506,7 +506,7 @@ html {
   }
   .products-items-containter .item .inner h1{
       color:#5e543c;
-      font-family: 'Gabriola', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: 'Gabriola';
       font-size:55px;
       font-weight: 200;
   }
