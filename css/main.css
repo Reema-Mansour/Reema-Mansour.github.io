@@ -40,8 +40,6 @@
   }
   @font-face {
     font-family: 'Gabriola';
-    font-style: normal;
-    font-weight: 700;
     src: url("../fonts/Gabriola/Gabriola.ttf") format("truetype"),
     url("../fonts/Gabriola/Gabriola.eot") format("embedded-opentype"),
     url("../fonts/Gabriola/Gabriola.woff") format("woff"),
