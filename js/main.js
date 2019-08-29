@@ -60,8 +60,38 @@ $('.product-wrapper .products-items-containter').slick({
     autoplaySpeed: 5000,
     arrows: true,
     dots: false,             
-    nextArrow:"<div class='right-arrow'><img src='images/right-arrow.png' alt=''></div>",
-    prevArrow:"<div class='left-arrow'><img src='images/left-arrow.png' alt=''></div>",
+    nextArrow:"<div class='right-arrow mt-160'><img src='images/right-arrow.png' alt=''></div>",
+    prevArrow:"<div class='left-arrow mt-160'><img src='images/left-arrow.png' alt=''></div>",
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: true,
+                dots:false
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots:false
+            }
+        },
+    ],
+});
+$('.bottom-part .opinion-container').slick({
+    slidesToShow:3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 5000,
+    arrows: true,
+    dots: false,             
+    nextArrow:"<div class='right-arrow'><img class='slick-next' src='images/right-arrow.png'></div>",
+    prevArrow:"<div class='left-arrow'><img class='slick-prev' src='images/left-arrow.png'></div>",
     responsive: [
         {
             breakpoint: 992,
