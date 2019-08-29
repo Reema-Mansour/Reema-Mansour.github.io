@@ -40,12 +40,16 @@
   }
   @font-face {
     font-family: 'Gabriola';
+    font-style: normal;
+    font-weight: 700;
     src: url("../fonts/Gabriola/Gabriola.ttf") format("truetype"),
     url("../fonts/Gabriola/Gabriola.eot") format("embedded-opentype"),
     url("../fonts/Gabriola/Gabriola.woff") format("woff"),
     url("../fonts/Gabriola/Gabriola.svg") format("svg");
   }
 /* end fonts */
+
+
 html {
     height: 100%;
     box-sizing: border-box;
@@ -125,7 +129,8 @@ html {
   .main-header .top-bar ul li{
       display: inline-block;
       color: #5a5658;
-      font-size: 18px;
+      font-size: 12px;
+      font-weight: 600;
       font-family: Arial, Helvetica, sans-serif;
       margin-right: 15px;
       vertical-align: center;
@@ -186,7 +191,7 @@ html {
       float: right !important;
   }
   .bottom-bar{
-      background-color: #f2e638;
+      background-color: #f2e638; 
       padding: 40px 40px;
       box-sizing: border-box;
   }
@@ -238,9 +243,10 @@ html {
   
   .navbar-collapse ul li {
       color:#ffffff;
-      font-size: 170%;
+      font-size: 20px;
       flex: 0 1 auto; /* Default */
       list-style-type: none;
+      font-weight: 600;
   }
   .navbar-collapse ul li a:hover{
       background-color: transparent;
@@ -264,7 +270,7 @@ html {
   .inspiration-words{
       top: 60px;
       position: absolute;
-      padding-left: 160px;
+      padding-left: 50px;
   }
   
   .main-headline{
@@ -286,26 +292,19 @@ html {
       color: #ffffff;
       font-family: 'Gabriola', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       line-height: 48px;
-      text-align: justify;
       overflow: hidden;
       height: 230px;
-      width: 50%;
+      width: 70%;
   }
   .btn-transparent{
       background-color: transparent;
       border: 2px solid #262058;
       border-radius: 0px;
-      position: absolute;
-      bottom: 60px;
       color:#dfc98f;
-      left: 160px; 
       width: 350px;
       height: 60px;
       line-height: 100%;
       font-size: 40px;
-      letter-spacing: 4px;
-      margin-left: 15px;
-      z-index: 1;
   }
   .btn-transparent:hover{
       background-color: rgba(223, 201, 143, 0.4);
@@ -405,10 +404,10 @@ html {
   
   }
   .top-part-1{
-      background-color: rgba(38, 32, 88, 0.82);
+      background-color: rgba(38, 32, 88, 0.82) !important;
   }
   .top-part-2{
-      background-color: rgba(178, 48, 67 , 0.82);
+      background-color: rgba(178, 48, 67 , 0.82) !important;
   }
   .top-part-3{
       background-color: rgba(219, 205, 88, 0.82);
@@ -507,6 +506,7 @@ html {
       font-family: 'Gabriola', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size:55px;
       font-weight: 200;
+      margin:5%;
   }
   .products-items-containter .item .inner{
       height: 100%;
@@ -542,12 +542,13 @@ html {
       border: 3px solid #836849;
   
   }
+  .mt-160{
+    margin-top: 160px;
+  }
   .left-arrow{
-      margin-top: 160px;
       margin-right:10px; 
   }
   .right-arrow{
-      margin-top: 160px;
       margin-left:10px; 
   }
   .back{
@@ -583,36 +584,28 @@ html {
       border: 4px solid #202020;
   }
   .bottom-part{
-      height: 500px;
-      position: relative;
+    position: inherit;
+    top:-90px;
+    left: 0;
+    margin: 0 5%;
   }
   
   .opinion-container{
-      position: absolute;
-      top:-150px;
-      left: 0;
-      padding: 5%;
-  
+    margin: 0 5%;
   }
-  .opinion-container .inner{
-      display: flex;
-      height: 400px;
-      justify-content: space-between;
+  .opinion-container  .person-photo{
+    width: 167px;
+    height: 167px;
+    border-radius: 50%;
+    margin-left: 25%;
   }
-  .opinion-container .inner .item{
-      flex: 0 1 30%; 
+  .opinion-container h1{
+      font-size: 25px;
+      margin: 20px;
   }
-  .opinion-container .inner .item img{
-      width: 50%;
-      height: 50%;
-      border-radius: 50%;
-      margin-bottom:10%;
-      border: 1px solid #ffffff;
-  }
-  .opinion-container .inner .item p{
-      font-size: 20px;
+  .opinion-container p{
+      font-size: 15px;
       font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
       text-align: center;
       color: #020202;
   }
@@ -648,8 +641,41 @@ html {
       background-color: #f2e638;
       padding: 15px;
   }
-  
-  @media (min-width: 768px) {
+/* start service page style*/ 
+.top-wrapper{
+    height: 500px;
+    position: relative;
+    background-image: url('../images/service-back.jpg');
+    
+} 
+.top-wrapper img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.service-top-part{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 74, 74, 0.692);;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.top-wrapper h1{
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Gabriola', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 48px;
+    text-align-last: center;
+    padding:0 5% ;
+}
+
+/* end service page style*/
+
+/* start responsive design*/ 
+ @media (min-width: 768px) {
       .flex-basis-50 li{
           font-size: 14px;
       }
@@ -664,19 +690,14 @@ html {
           width: 80%;
           height: 100%;
       }
-      .part-wraper h2{
-          font-size:45px;
-      }
+     
       .products-items-containter .item .inner h1{
           font-size: 45px;
       }
       .mt-40{
           margin-top: 20px;
       }
-      .part-wraper p{
-          font-size: 30px;
-          padding: 0 8%;
-      }
+   
   }
   @media(max-width: 1200px){
       .footer-container img{
@@ -699,9 +720,12 @@ html {
       }
   }
   @media (max-width: 991px) {
+
     .navbar-collapse ul li{
         font-size: 150%;
+        margin: 5px;
     }
+    
     .logo{
         height: 5%;
         width: 70%;
@@ -734,28 +758,8 @@ html {
 
   }
 
-  @media(max-width : 886px){
-    .main-header .top-bar ul li{
-        font-size: 12px;
-        font-weight: 600;
-    }
-
-  }
   @media(max-width : 785px){
-    .opinion-container {
-        top: -100px;
-    }
-    .opinion-container .inner .item img{
-        width: 50%;
-        height: 30%;
-        border-radius: 50%;
-        margin-bottom:10%;
-        border: 1px solid #ffffff;
-    }
-    .opinion-container .inner .item p{
-        font-size: 12px;
-      
-    }
+
     .footer-group label{
         font-size: 12px;
     }
@@ -776,9 +780,7 @@ html {
     }
   }
   @media (max-width: 610px) {
-      .main-header .top-bar ul li{
-          font-size: 10px;
-      }
+
       .main-headline{
           font-size: 30px;
       }
@@ -804,17 +806,30 @@ html {
       .offer{
           font-size: 14px;
           line-height: 14px;
-          width:50%;
-          
+          width:50%;  
       }
+      .products-items-containter .item{
+        flex: 0 1 30%;
+        height: 350px;
+    }
+    .products-items-containter .item .inner h1{
+        font-size: 25px;
+        margin:5%;
+    }
+    .btn-order{
+        font-size: 120%;
+    } 
+    .remove-when-shrink{
+        display: none;
+    }
   }
   @media (min-width: 480px) {
 
   }
   
 
-    @media (max-width: 360px) {
-      .offers-section .offers-section-content>.col-xs-6{
-        width: 100%;
-      }
+@media (max-width: 360px) {
+    .offers-section .offers-section-content>.col-xs-6{
+    width: 100%;
     }
+}
