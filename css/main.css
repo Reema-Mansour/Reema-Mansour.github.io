@@ -110,6 +110,9 @@ html {
   *:focus {
     outline: 0 !important;
   }
+  .mt-24minus{
+      margin-top: -24px;
+  }
   .main-wrapper {
       overflow: hidden;
       min-height: 100%;
@@ -220,6 +223,9 @@ html {
       border-radius: 0;
       float: right;
   }
+  .navbar-toggler {
+    margin-bottom: 5px !important;
+}
   /* .navbar-collapse ul li{
       
   }  */
@@ -401,7 +407,6 @@ html {
       top: 0;
       left: 0;
       z-index: -1;
-  
   }
   .top-part-1{
       background-color: rgba(38, 32, 88, 0.82) !important;
@@ -504,7 +509,7 @@ html {
   .products-items-containter .item .inner h1{
       color:#5e543c;
       font-family: 'Gabriola', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size:55px;
+      font-size:40px;
       font-weight: 200;
       margin:5%;
   }
@@ -645,13 +650,13 @@ html {
   }
 /* start service page style*/ 
 .top-wrapper{
-    height: 500px;
-    position: relative;
-    background-image: url('../images/service-back.jpg');
-    
+    height: 500px;   
+    position: relative; 
 } 
 .top-wrapper img{
-    display: inline-block;
+    position: absolute;
+    top:0;
+    left: 0;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -663,16 +668,248 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
 }
 .top-wrapper h1{
     font-size: 50px;
     color: #ffffff;
     font-family: 'Gabriola', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 48px;
-    text-align-last: center;
     padding:0 5% ;
+    text-align: center;
+    line-height: 500px;
 }
+.header2{
+    position: absolute;
+    top:60px;
+    border-right: 8px solid #f2e638;
+    background-color: #ffffff;
+}
+.main-nav2 li a{
+    color: #202020;
+    display: inline-block;
+    padding:0 25px;
+    font-size: 20px;
+    height: 100%;;
+    margin:0 5px;
+}
+.main-nav2 li a:hover{
+    border-bottom: 4px solid #f2e638;
+}
+.main-nav2 .active{
+    border-bottom: 4px solid #f2e638;
+    
+}
+.pb-0{
+    padding-bottom: 0;
+
+}
+.mt-24{
+    margin-top: 24px !important;
+}
+.service-description{
+  position: relative; 
+}
+.service-description .descreption{
+    width:45%;
+    background-color: #f2e638;
+    color:#ffffff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2% 6%;
+    position: relative;
+    text-align: center;
+    top:-50px; 
+    float: right;
+    z-index: -1;
+}
+.service-description .image-wrapper{
+    position: absolute;
+    top:-100px; 
+    left: -85%;
+    width: 90%;
+}
+.image-wrapper::after{
+    width: 100%;
+    height: 300px;
+    top:10px; 
+    left: 10px;
+    position: absolute;
+    content: ' ';
+    background-color: #0b2b33;
+    z-index: -1;
+}
+.image-wrapper::before{
+    width: 100%;
+    height: 300px;
+    top:20px; 
+    left: 20px;
+    position: absolute;
+    content: ' ';
+    background-color: #ccc;
+    z-index: -1;
+}
+.image-container::before{
+    width:100%;
+    height: 35%;
+    background-color:  rgba(235,210,58,.5);
+    position: absolute;
+    left: 0;
+    bottom:0; 
+    content: ' ';
+    
+}
+.service-description .image-wrapper .image-container>img{
+    width: 100%;
+    height: 300px;
+}
+.inner-desc{
+    position: absolute;
+    bottom: 0;
+    padding-left: 15px;
+    padding-bottom: 5px; 
+    text-align: center;
+    width: 100%;
+}
+.inner-desc h2{
+    font-size: 18px;
+
+}
+.btn-section{
+    margin:0;
+    width:100%;
+    height:auto;
+    text-align: center;
+    padding-bottom:10px;
+    
+}
+
+.btn-blue:hover{
+    color: #262058 !important;
+    background-color: transparent;
+    border:1px solid #262058;
+    cursor: pointer;
+}
+.btn-blue{
+    width: 30%;
+    color:#ffffff !important;
+    background-color: #262058;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 0;
+    outline:none;
+    display: inline-block;
+    vertical-align:baseline;
+    text-align: center;
+}
+.back-shape{
+    height: auto;
+}
+.back-shape::before{
+    width:0px;
+    height: 0px;
+    border-left: 90em solid transparent;
+    border-bottom: 40em solid #ffec83; 
+    position: absolute;
+    right: 0;
+    bottom:0;
+    content: ' ';
+    z-index: -1;
+}
+.back-shape::after{
+    width:0px;
+    height: 0px;
+    border-left: 95em solid transparent;
+    border-bottom: 45em solid rgba(239,218,95,.5); 
+    position: absolute;
+    right: 0;
+    bottom:0;
+    content: ' ';
+    z-index: -1;
+}
+.service-footer-back{
+    background-color: #1f1f1f;
+    height: auto;
+    padding: 20px;
+}
+.service-footer-back .contact-info{
+    color: #ffffff;
+    text-align: center;
+}
+.service-footer-back .contact-info h2{
+    font-size: 12px;
+}
+.service-footer-back .social-links img{
+    margin:5px;
+    width: 35px !important;
+    height: 30px !important;
+}
+.services-types-wrapper{
+    position: relative;
+}
+.types{
+    padding:40px 150px;
+}
+.types .item{
+    background-color: #eeeeee;
+    margin: 25px 0;
+    padding: 20px;
+    box-shadow: 5px 10px 70px #888888;
+    text-align: center;
+}
+/* .types .item:hover{
+    background-color: #262058;
+    color: #ffffff;
+}
+.types .item:hover .sp-du{
+    color:#ffffff;
+}
+.types .item:hover .durations ul li i{
+    color: #ffffff;
+} */
+.types .item h2{
+    font-size: 25px;
+    margin: 20px;
+    font-weight: 500;
+}
+
+.sp-du{
+    color: #262058;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.types .item .desc{
+    margin:20px;
+    font-size: 12px;
+    border: 1px solid #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    color: #555454;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 70px #eeeeee inset;
+}
+.types .item .durations{
+    margin:20px;
+    padding: 20px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.types .item .durations ul li i{
+    margin-top: 10px;
+    float: left;
+    color: #262058;
+}
+.types .active{
+    margin: 0;
+    background-color: #eedc72;
+    box-shadow: 0px 0px 70px #888888 !important;
+}
+.right-box{
+    box-shadow: 0px 5px 70px #888888 !important;
+
+}
+
 
 /* end service page style*/
 
@@ -705,6 +942,9 @@ html {
       .footer-container img{
           width: 90%;
           height: 80%;
+      }
+      .types .item .durations{
+          margin: 0;
       }
   }
   
@@ -792,36 +1032,36 @@ html {
         font-size: 30px;
         padding: 15px 0;
     }
-      .main-headline{
-          font-size: 30px;
-      }
-      .inspiration-words{
-          padding-left: 10%;
-      }
-      .inspiration-words p{
-          font-size: 20px;
-      }
-      .btn-transparent{
-          font-size: 30px;
-          height: 50px;
-          width: 270px;
-          left:60px;
-      }
-      .service-items-containter .item{
-          height: 180px;
-      }
-      .service-items-containter .item a h1{
-          font-size: 30px;
-          line-height: 180px;
-      }
-      .offer{
-          font-size: 14px;
-          line-height: 14px;
-          width:50%;  
-      }
-      .products-items-containter .item{
-        flex: 0 1 30%;
-        height: 350px;
+    .main-headline{
+        font-size: 30px;
+    }
+    .inspiration-words{
+        padding-left: 10%;
+    }
+    .inspiration-words p{
+        font-size: 20px;
+    }
+    .btn-transparent{
+        font-size: 30px;
+        height: 50px;
+        width: 270px;
+        left:60px;
+    }
+    .service-items-containter .item{
+        height: 180px;
+    }
+    .service-items-containter .item a h1{
+        font-size: 30px;
+        line-height: 180px;
+    }
+    .offer{
+        font-size: 14px;
+        line-height: 14px;
+        width:50%;  
+    }
+    .products-items-containter .item{
+    flex: 0 1 30%;
+    height: 350px;
     }
     .products-items-containter .item .inner h1{
         font-size: 25px;
@@ -833,6 +1073,15 @@ html {
     .remove-when-shrink{
         display: none;
     }
+    /*start services section*/
+    .top-wrapper{
+        height: 400px;
+    }
+    .top-wrapper h1{
+        font-size: 40px;
+        line-height: 400px;
+    }
+    /* end services section */
   }
   @media (max-width: 480px) {
     .service-items-containter .item {
