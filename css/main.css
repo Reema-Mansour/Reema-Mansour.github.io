@@ -556,6 +556,7 @@ html {
       border: 3px solid #836849;
   
   }
+ 
   .mt-160{
     margin-top: 160px;
   }
@@ -755,6 +756,7 @@ html {
 .image-container{
     height: 100%;
     overflow: hidden;
+    position: absolute;
 }
 .image-wrapper::before{
     width: 100%;
@@ -763,17 +765,18 @@ html {
     left: 20px;
     position: absolute;
     content: ' ';
-    background-color: #ccc;
+    background-color: #686d70;
     z-index: -1;
 }
 .image-container::before{
     width:100%;
-    height: 35%;
+    height: 65%;
     background-color:  rgba(235,210,58,.5);
     position: absolute;
     left: 0;
-    bottom:0; 
+    bottom: -98px;
     content: ' ';
+    transform: skewY(20deg); 
     
 }
 .service-description .image-wrapper .image-container>img{
@@ -783,8 +786,9 @@ html {
 .inner-desc{
     position: absolute;
     bottom: 0;
-    text-align: center;
     width: 100%;
+    padding: 15px;
+    color: #3b3b3b;
 }
 .inner-desc h2{
     font-size: 18px;
@@ -1152,6 +1156,8 @@ height: 350px;
     }
     .image-container::before {
         height: 100%;
+        transform: none; 
+        bottom:0;
     }
     .inner-desc {
         bottom: 20%;
