@@ -524,9 +524,9 @@ html {
   }
   .products-items-containter .item .inner:hover img{
       transform: scaleX(1.5);
-      -ms-transform: scale(1.5); /* IE 9 */
-      -webkit-transform: scale(1.5); /* Safari 3-8 */
-      transform: scale(1.5);
+      -ms-transform: scaleX(1.5); /* IE 9 */
+      -webkit-transform: scaleX(1.5); /* Safari 3-8 */
+      transform: scaleX(1.5);
       overflow: hidden;
   }
   .products-items-containter .item .inner:hover h1{
