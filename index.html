@@ -20,377 +20,301 @@
     <!--end Global css-->
     <!--page css-->
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Pacifico');
-
-*, *:after, *:before{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-  -webkit-transition: all 100ms ease-in;
-  transition: all 100ms ease-in;
-}
-html{
-	background-color: #222048;
-}
-	    body{
-	background-color: #222048;
-}
-.feliz{
-  width: 100%;
-  font-family: 'Pacifico', cursive;
-  font-size: 100px;
-  font-weight: 700;
-  color: #f48fb1;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  opacity: 0;
-  animation: vem_feliz 2s ease-in-out 7s forwards;
-}
-.ano_novo{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  padding: 200px 100px 0px 0px;
-}
-.ano_novo>span{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 175px;
-  font-weight: 700;
-  color: #7a8fe8;
-}
-span.seis{
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  margin-right: -200px;
-  animation: vai_2016 5s ease-in-out 5s forwards;
-}
-span.sete{
-  position: absolute;
-  right: 0%;
-  margin-right: -200px;
-  animation: vem_2017 6s ease-in-out forwards;
-}
-span.sete:before{
-  content: '';
-  width: 0px;
-  height: 6px;
-  display: block;
-  border-radius: 3px;
-  background: #7a8fe8;
-  transform: rotate(0deg);
-  transform-origin: left top;
-  position: absolute;
-  top: 55px;
-  left: 10px;
-  z-index: -1;
-  animation: entrega_balao 1s ease-in-out 4s;
-}
-.balao{
-  width: 100px;
-  height: 100px;
-  display: block;
-  background: #e8d57a;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  margin-top: -165px;
-  right: 0%;
-  margin-right: -200px;
-  animation: vem_e_vai_balao 10s ease-in-out forwards;
-}
-.balao:before{
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 10px 20px 10px;
-  border-color: transparent transparent #b19b32 transparent;
-  position: absolute;
-  left: 50%;
-  margin-left: -10px;
-  bottom: -10px;
-  z-index: -1;
-}
-.balao:after{
-  content: '';
-  width: 4px;
-  height: 100px;
-  display: block;
-  background: #fff;
-  border-radius: 0px 0px 3px 3px;
-  position: absolute;
-  left: 50%;
-  margin-left: -2px;
-  bottom: -110px;
-}
-.fogos{
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-}
-.fogos>div{
-  border: 2px solid #fff;
-  position: absolute;
-  opacity: 0;
-  animation: solta_fogos 1.5s ease-in-out 8s forwards;
-}
-.fogos>div.f1{
-  left: 20%;
-  top: 40%;
-}
-.fogos>div.f2{
-  left: 15%;
-  top: 70%;
-}
-.fogos>div.f3{
-  right: 20%;
-  top: 40%;
-}
-.fogos>div.f4{
-  right: 15%;
-  top: 70%;
-}
-.fogos>div span{
-  width: 6px;
-  height: 6px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  animation: estoura_fogos 0.5s ease-in-out 9s forwards;
-}
-.fogos>div span:nth-child(1){
-  transform: rotate(0deg);
-}
-.fogos>div span:nth-child(2){
-  transform: rotate(120deg);
-}
-.fogos>div span:nth-child(3){
-  transform: rotate(240deg);
-}
-.fogos>div span:before{
-  content: '';
-  width: 2px;
-  height: 50px;
-  display: block;
-  background: #f5cc06;
-  position: absolute;
-  top: -60px;
-  left: 2px;
-}
-.fogos>div span:after{
-  content: '';
-  width: 2px;
-  height: 50px;
-  display: block;
-  background: #f5cc06;
-  position: absolute;
-  bottom: -60px;
-  left: 2px;
-}
-.fogos>div span i:before{
-  content: '';
-  width: 3px;
-  height: 3px;
-  display: block;
-  border-radius: 50%;
-  background: #fff;
-  position: absolute;
-  top: -15px;
-  left: 10px;
-}
-.fogos>div span i:after{
-  content: '';
-  width: 3px;
-  height: 3px;
-  display: block;
-  border-radius: 50%;
-  background: #fff;
-  position: absolute;
-  top: -15px;
-  right: 10px;
-}
-a.author{
-  font-size: 12px;
-  text-decoration: none;
-  color: #f47c7c;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-
-@keyframes vem_2017 {
-  0% {
-    right: 0%;
-  }
-  66.6666% {
-    right: 50%;
-    margin-right: -300px;
-  }
-  90% {
-    right: 50%;
-    margin-right: -300px;
-  }
-  100% {
-    right: 50%;
-  }
-}
-@keyframes vem_e_vai_balao {
-  0% {
-    right: 0%;
-  }
-  40% {
-    right: 50%;
-    margin-right: -300px;
-  }
-  50% {
-    right: 50%;
-    margin-right: -200px;
-    top: 50%;
-  }
-  100% {
-    top: -100%;
-    right: 50%;
-  }
-}
-@keyframes entrega_balao {
-  0% {
-    transform: rotate(-30deg);
-    width: 40px;
-  }
-  100% {
-    transform: rotate(-150deg);
-    width: 70px;
-  }
-}
-@keyframes vai_2016 {
-  0% {
-    top: 50%;
-  }
-  100% {
-    top: -100%;
-  }
-}
-@keyframes vem_feliz {
-  0% {
-    margin-top: 0px;
-    opacity: 0;
-  }
-  100% {
-    margin-top: -200px;;
-    opacity: 1;
-  }
-}
-@keyframes solta_fogos {
-  0% {
-    margin-top: 100%;
-    opacity: 0;
-    width: 2px;
-    height: 30px;
-    display: block;
-    border-radius: 50%;
-  }
-  75% {
-    margin-top: 0%;
-    opacity: 1;
-    width: 2px;
-    height: 30px;
-    display: block;
-    border-radius: 50%;
-  }
-  80%{
-    margin-top: 0px;
-    margin-left: 0px;
-    opacity: 1;
-    width: 10px;
-    height: 10px;
-    display: block;
-    border-radius: 50%;
-    transform: scale(0.2);
-  }
-  100%{
-    opacity: 1;
-    width: 10px;
-    height: 10px;
-    display: block;
-    border-radius: 50%;
-    transform: scale(1);
-  }
-}
-@keyframes estoura_fogos {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@media screen and (max-width: 790px) {
-	.feliz{
-        font-size: 30px !important;
-    }
-    .feliz img{
-        height:70px!important;
-         width:70px!important;
-    }
-    .ano_novo{
-        font-size: 30px !important;
-
-    }
-}
-    </style>
     <!--end page css-->
     <!--page-->
 </head>
 <body data-lang="en">
-<div>
-    <div class="feliz" style="font-size:50px">Happy new year
-    <img style="height:100px; width:100px; border-radius:50%" src="https://media-exp1.licdn.com/dms/image/C4E03AQERstEn_U-dNg/profile-displayphoto-shrink_400_400/0/1583180110367?e=1614816000&v=beta&t=1briZejX27NLXKz3tF4_7YUQMAJztifdcSuG9MFwnvI" /> Maha Ghassan</div>
+    <div class="main-wrapper">
+        <header class="main-header">
+            <div class="top-bar">
+                <ul class="flex-basis-60 clearfix remove-when-shrink">
+                   <li><img src="images/header-phone-icon.png" alt="">0599999999</li>
+                   <li><img src="images/header-email-icon.png"   alt="">yourWedding.gmail.com</li> 
+                </ul>
+                <ul class="flex-basis-40  clearfix"  style="float: right">
+                    <li class="float-right">
+                        <a href="#"  >Register</a>
+                    </li>
+                    <li class="float-right">
+                        <a href="#" class=" btn  gray">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-bar">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav main-nav">
+                            <li class="nav-item"><a class="active" href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item"><a  href="#" id="about" >About</a></li>
+                            <li class="nav-item"><a  href="#" id="services">Services</a></li>
+                            <li class="nav-item logo-item">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                    <a class="" href="#">
+                                        <img  class="logo"src="images/logo.png">
+                                    </a>
+                            </li> 
+                            <li class="nav-item"><a  href="#" id="products">Products</a> </li>
+                            <li class="nav-item"><a  href="#">Ideas</a> </li>
+                            <li class="nav-item"><a  href="#" id="contact">Contacts</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="inspiration-wrapper">
+                <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class=" carousel-item active">
+                            <img src="images/inspireBack5.jpg" alt="">
+                            <div class="inspiration-up-wrapper"></div>
+                            <div class="inspiration-words ">
+                                <div class="">
+                                    <h3 class="main-headline">Happy Wedding</h3>
+                                    <p class="paragraph">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    </p>
+                                    <a href="#" class="btn btn-transparent">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/inspireBack3.jpg" alt="">
+                            <div class="inspiration-up-wrapper"></div>
+                            <div class="inspiration-words">
+                                <div class="">
+                                    <h3 class="main-headline">Pretty Bride</h3>
+                                    <p class="paragraph">
+                                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                                    </p>
+                                    <a href="#" class="btn btn-transparent">Get Started</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/inspireBack6.jpg" alt="">
+                            <div class="inspiration-up-wrapper"></div>
+                            <div class="inspiration-words">
+                                <div class="">
+                                    <h3 class="main-headline">Shiny Night</h3>
+                                    <p class="paragraph">
+                                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                                    </p>
+                                    <a href="#" class="btn btn-transparent">Get Started</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="part-wraper">
+                <div class="about-shape">
+                    <div class=" content" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                        <h2 > Who We Are, Know More About Us </h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                        <div class="down-icon">
+                            <a href="#" id="go-services"><img src="images/down-arraw.gif" alt="down-arraw" ></a> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="services-section">
+            <div class="part-wraper">
+                <div class="container content service">
+                    <h2>Our Services</h2>
+                </div>
+                <div class="service-items-containter">
+                    <div  class="item" data-aos="zoom-in" data-aos-duration="500" data-aos-once="false">
+                        <img  src="images/pic.jpg"  alt="">
+                        <div  class="top-part top-part-1"></div>
+                        <a href="services.html"><h1>Music</h1></a>
+                    </div>
+                    <div class="item" data-aos="zoom-in" data-aos-duration="800" data-aos-once="false">
+                        <img src="images/reg.jpg" alt=""/>
+                        <div class="top-part top-part-2"></div>
+                        <a href="services.html"><h1>Regulation</h1></a>
+                        <div class="offer">Offer</div>
+                    </div>
+                    <div class="item" data-aos="zoom-in" data-aos-duration="1100" data-aos-once="false">
+                        <img src="images/light.jpg" alt="">
+                        <div class="top-part top-part-3"></div>
+                        <a href="services.html"><h1>Light</h1></a>
+                    </div>
+
+                    <div class="item" data-aos="zoom-in" data-aos-duration="500" data-aos-once="false">
+                        <img src="images/koash.jpg" alt="">
+                        <div class="top-part top-part-4"></div>
+                        <a href="services.html"><h1>Daises</h1></a>
+                    </div>
+                    <div class="item" data-aos="zoom-in" data-aos-duration="800" data-aos-once="false">
+                        <img src="images/gun.jpg" alt="">
+                        <div class="top-part top-part-5"></div>
+                        <a href="services.html"><h1>Flower Gun</h1></a>
+                    </div>
+                    <div class="item" data-aos="zoom-in" data-aos-duration="1100" data-aos-once="false">
+                        <img src="images/steam.jpg" alt="">
+                        <div class="top-part top-part-6"></div>
+                        <a href="services.html"><h1>Steam</h1></a>
+                        <div class="offer">Offer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products-section">
+            <div class="part-wraper">
+                <div class="product-wrapper">
+                    <div class="container content products">
+                        <h2>Our Products</h2>
+                    </div>
+                    <div class="products-items-containter">
+                        <div  class="item" data-aos="flip-left" data-aos-duration="500" data-aos-once="false">
+                           <div class="inner">
+                                <img  src="images/shinebride.jpg"  alt="">
+                                <div  class="top-part"></div>
+                                <a href="#"><h1>Bride Shine</h1></a>
+                                <a href="#" class="btn btn-order ">Order Now</a>
+                           </div>
+                        </div>
+                        <div  class="item" data-aos="flip-left" data-aos-duration="500" data-aos-once="false">
+                            <div class="inner">
+                                <div  class="top-part"></div>
+                                <img  src="images/sweets.jpg"  alt="">
+                                <a href="#"><h1>Sweets</h1></a>
+                                <a href="#" class="btn btn-order ">Order Now</a>
+                            </div>
+                        </div>
+                        <div  class="item" data-aos="flip-left" data-aos-duration="500" data-aos-once="false">
+                            <div class="inner">
+                                <div  class="top-part"></div>
+                                <img  src="images/dresses.jpg"  alt="">
+                                <a href="#"><h1>Dresses</h1></a>
+                                <a href="#" class="btn btn-order ">Order Now</a>
+                            </div>
+                        </div>
+                        <div  class="item" data-aos="flip-left" data-aos-duration="500" data-aos-once="false">
+                            <div class="inner">
+                                <img  src="images/koash.jpg"  alt="">
+                                <div  class="top-part"></div>
+                                <a href="#"><h1>Daises</h1></a>
+                                <a href="#" class="btn btn-order ">Order Now</a>
+                            </div>
+                        </div>
+                        <div  class="item" data-aos="flip-left" data-aos-duration="500" data-aos-once="false">
+                            <div class="inner">
+                                <div  class="top-part"></div>
+                                <img  src="images/light.jpg"  alt="">
+                                <a href="#"><h1>Lights</h1></a>
+                                <a href="#" class="btn btn-order ">Order Now</a>
+                            </div>
+                        </div>
+                        <div  class="item" data-aos="flip-left" data-aos-duration="500" data-aos-once="false">
+                            <div class="inner">
+                                <div  class="top-part"></div>
+                                <img  src="images/pic.jpg"  alt="">
+                                <a href="#"><h1>DJ</h1></a>
+                                <a href="#" class="btn btn-order ">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <br><br>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="part-wraper">
+                <div class="back">
+                    <div class="row">
+                        <div class="form group col-sm-8 col-xs-8">
+                             <input type="text" class="subscribe-input" placeholder="Enter Your Email To Subscribe...">
+                        </div>
+                        <div class="form group col-sm-4 col-xs-4">
+                            <button  class="btn btn-outline-subscribe">Subscribe</button>
+                        </div>
+                    </div>
+                    <br><br><br><br><br>
+                </div>
+                <div class="bottom-part">
+                    <div class="opinion-container">
+                        <div class=" col-md-4" data-aos="zoom-in-down" data-aos-duration="500" data-aos-once="false">
+                            <img class="person-photo" src="images/customer1.jpg" alt="">
+                            <h1>Lorem Ipsum</h1>
+                            <p>
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            </p>
+                        </div>
+                        <div class=" col-md-4" data-aos="zoom-in-down" data-aos-duration="500" data-aos-once="false">
+                            <img class="person-photo" src="images/customer2jpg.jpg" alt="">
+                            <h1>Lorem Ipsum</h1>
+                            <p>
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            </p>
+                        </div>
+                        <div class=" col-md-4" data-aos="zoom-in-down" data-aos-duration="500" data-aos-once="false">
+                            <img  class="person-photo" src="images/customer3.jpg" alt="">
+                            <h1>Lorem Ipsum</h1>
+                            <p>
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            </p>
+                        </div>
+                        <div class=" col-md-4" data-aos="zoom-in-down" data-aos-duration="500" data-aos-once="false">
+                            <img class="person-photo" src="images/customer3.jpg" alt="">
+                            <h1>Lorem Ipsum</h1>
+                            <p>
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="contact-section">
+            <div class="part-wraper">
+                <div class="footer-container">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-6">
+                            <img  src="images/map.png" alt="">
+                        </div>
+                        <div class="col-sm-4 col-xs-4 mt-40">
+                            <div class="footer-group">
+                                <img class="footer-icon" src="images/footer-mobile-icon.png" alt="">
+                                <label for="">05999999999</label>
+                            </div>
+                            <div class="footer-group">
+                                <img class="footer-icon" src="images/header-email-icon.png" alt="">
+                                <label for="">yourWedding@gmail.com</label>
+                            </div>
+                            <div class="footer-group">
+                                <img class="footer-icon" src="images/footer-phone-icon.png" alt="">
+                                <label for="">082222222</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-2">
+                            <div class="footer-group"> <a href="#"><img class="footer-social-icon" src="images/facebook-icon.png" alt=""></a></div>
+                            <div class="footer-group"><a href="#"><img class="footer-social-icon" src="images/twitter-icon.png" alt=""></a></div>
+                            <div class="footer-group"><a href="#"><img class="footer-social-icon" src="images/youtube-icon.png" alt=""></a></div>
+                            <div class="footer-group"><a href="#"><img class="footer-social-icon" src="images/instagram-icon.png" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    All rights are preserved
+                </div>
+            </div>
+        </footer>
     </div>
-    <div class="ano_novo">
-    <span>202</span>
-    <span class="seis">0</span>
-    <span class="sete">1</span>
-    <div class="balao"></div>
-    </div>
-    <div class="fogos">
-    <div class="f1">
-        <span><i></i></span>
-        <span><i></i></span>
-        <span><i></i></span>
-    </div>
-    <div class="f2">
-        <span><i></i></span>
-        <span><i></i></span>
-        <span><i></i></span>
-    </div>
-    <div class="f3">
-        <span><i></i></span>
-        <span><i></i></span>
-        <span><i></i></span>
-    </div>
-    <div class="f4">
-        <span><i></i></span>
-        <span><i></i></span>
-        <span><i></i></span>
-    </div>
-    </div>
-</div>
 </body>
 
 <!--end global js-->
